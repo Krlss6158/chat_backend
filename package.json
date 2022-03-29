@@ -1,0 +1,37 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "babel-node": "babel-node --presets=@babel/preset-env",
+    "dev": "nodemon --exec npm run babel-node src/index.js",
+    "build": "babel src --out-dir build",
+    "start": "node build/index.js"
+  },
+  "dependencies": {
+    "@babel/node": "^7.16.8",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "sequelize": "^6.17.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.7",
+    "@babel/preset-env": "^7.16.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krlss6158/chat_backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Krlss6158/chat_backend/issues"
+  },
+  "homepage": "https://github.com/Krlss6158/chat_backend#readme"
+}
